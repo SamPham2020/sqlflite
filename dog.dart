@@ -123,5 +123,26 @@ class Dog {
     await deleteDog(fido.id, database);
 
     print(await getDogs(database));
+
+
+    List<Dog> dogList = [
+      Dog(id: 2, name: 'Fido2', age: 12),
+      Dog(id: 3, name: 'Fido3', age: 12),
+      Dog(id: 4, name: 'Fido4', age: 12),
+      Dog(id: 5, name: 'Fido5', age: 12),
+      Dog(id: 6, name: 'Fido6', age: 12),
+
+    ];
+
+    // create a method to inset a container of dogLists
+    Future<void> insertDogs(dogList, Database db) async{
+      for (Dog dog in dogList) {
+        db.insert('dogs', dog.toMap(),
+          // this line wil solve the problem if the user makes
+          // the error with the primary key
+          conflictAlgorithm: ConflictAlgorithm.replace,
+        );
+      }
+    };
   }
 }
