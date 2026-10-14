@@ -15,6 +15,8 @@ flutter run --android-skip-build-dependency-validation
 
 
 Database: https://docs.flutter.dev/cookbook/persistence/sqlite
-
+to see data
 help> device explorer> data> data> type name of project dem > expand and database and save file.db
+
+open dbbrowser > open > browse data> Table select name Dogs 
 
