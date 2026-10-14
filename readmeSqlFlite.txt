@@ -8,6 +8,7 @@ dependencies:
   flutter:
     sdk: flutter
   sqflite: any  
+  path: any
 
 flutter run --android-skip-build-dependency-validation
 
