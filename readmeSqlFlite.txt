@@ -16,4 +16,5 @@ flutter run --android-skip-build-dependency-validation
 
 Database: https://docs.flutter.dev/cookbook/persistence/sqlite
 
-help> device explorer> data> data> type name of project dem > expanded
+help> device explorer> data> data> type name of project dem > expand and database and save file.db
+
